@@ -3,9 +3,7 @@
 ## Get inspired about travelling with your friends again
 https://holiday-hub.netlify.app/
 
-## Client
-
-Dear User,
+## Dear User
 
 Welcome to a travel app that has been created at a time when borders are still largely shut and global travel is increasingly more difficult to undertake. Despite the many obstacles we might face in order to reach distant places now (it can't be as bad as our ancestors' journeys though) our imaginations are always free and good times with friends are to be enjoyed anyways. This is the central idea of our app: a portal for live map collaboration among friends and like-minded people to get inspired, to discover places without limits. So, without further ado, our precious visitor, fasten your seatbelt and take on a journey with us! 
 
