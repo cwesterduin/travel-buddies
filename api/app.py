@@ -8,7 +8,6 @@ app = Flask(__name__)
 CORS(app)
 uri = os.getenv("DATABASE_URL")  # or other relevant config var
 testuri = os.getenv("ENV")
-print(testuri)
 if uri:
     if uri.startswith("postgres://"):
         uri = uri.replace("postgres://", "postgresql://", 1)
