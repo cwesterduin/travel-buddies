@@ -5,7 +5,7 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import { useDispatch } from "react-redux";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-
+import { apiUrl } from '../../api'
 
 function DropdownList( { items, handleClick } ){
   function handleHandleClick(data){  
@@ -27,7 +27,6 @@ export default function MapSearch( { handleClick }) {
   const [location, setLocation] = useState();
   const [locationData, setLocationData] = useState([])
 
-  const apikey = "2c4949f89d834d48f63e15ee66bace22";
 
   function handleInput(e) {
     // console.log(e.target.value);
@@ -36,7 +35,7 @@ export default function MapSearch( { handleClick }) {
 
   async function fetchLocation(e) {
     e.preventDefault();
-    const url = `http://api.positionstack.com/v1/forward?access_key=${apikey}&query=${location}`;
+    const url = `${apiUrl}/maps/search/${location}`;
     const data = await axios.get(url);
     setLocationData(data.data.data);   
   }

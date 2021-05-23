@@ -36,7 +36,7 @@ function MarkerModal({ show, handleClose, location, dTitle}) {
   return (
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
-        <Modal.Title>New Marker</Modal.Title>
+        <Modal.Title role="heading">New Marker</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         Create a new marker
