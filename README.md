@@ -29,7 +29,8 @@ For those of you who would like to get involved with code
 - `flask db upgrade`
 (if you get an error run commands again starting with flask db stamp head)
 3) to run test server:
-- `docker compose -f docker-compose.yaml -f docker-compose-dev.yaml up docker exec -it test_api sh`
+- `docker compose -f docker-compose.yaml -f docker-compose-test.yaml up`
+-  `docker exec -it test_api sh`
 4) to start tests:
 - `run pytest`
 5) to run coverage:
