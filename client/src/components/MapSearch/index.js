@@ -35,9 +35,9 @@ export default function MapSearch( { handleClick }) {
 
   async function fetchLocation(e) {
     e.preventDefault();
-    const url = `apiUrl/maps/search/${location}`;
+    const url = `${apiUrl}/maps/search/${location}`;
     const data = await axios.get(url);
-    setLocationData(data.data);   
+    setLocationData(data.data.data);   
   }
 
   return (

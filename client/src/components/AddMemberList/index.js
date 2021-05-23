@@ -5,8 +5,6 @@ import {  addHolidayMember } from "../../api"
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 
-import './style.css'
-
 function AddMemberList( { items } ){
     const { id } = useParams()
     const mySocket = useSelector(state => state.user.socket)

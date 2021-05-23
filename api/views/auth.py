@@ -4,7 +4,7 @@ from models import Users, create_user, auth_user, jwt_user, get_all_users, searc
 from app import app
 import jwt
 
-secret = os.getenv("SECRET_EKEY")
+secret = os.getenv("SECRET_KEY") or 'secret_key'
 
 
 @app.route('/')

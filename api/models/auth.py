@@ -4,7 +4,7 @@ import jwt
 import os
 from dataclasses import dataclass
 
-secret = os.getenv("SECRET_EKEY")
+secret = os.getenv("SECRET_KEY") or 'secret_key'
 @dataclass
 class Users(db.Model):
     id: int

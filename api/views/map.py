@@ -19,7 +19,7 @@ def delete_marker_route(id):
 
 @app.route('/maps/search/<query>', methods=['GET'])
 def search_loc(query):
-    key = os.getenv("positionstack") or '2c4949f89d834d48f63e15ee66bace22'
+    api_key = os.getenv("POSITIONSTACK_KEY")
     r = requests.get(f'http://api.positionstack.com/v1/forward?access_key={api_key}&query={query}')
     return r.json()
 
