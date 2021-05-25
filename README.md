@@ -21,7 +21,7 @@ For those of you who would like to get involved with code
 
 #### To Run the Server Processes Locally
 1) to start the backend processes:
-- `docker compose -f docker-compose-dev.yaml up`
+- `docker compose -f docker-compose.yaml -f docker-compose-dev.yaml up`
 3) set up the database and models with: 
 - `docker exec -it dev_api sh`
 - `flask db init`
